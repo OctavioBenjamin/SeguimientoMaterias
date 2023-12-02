@@ -1,4 +1,4 @@
-# Nombre de tu Proyecto
+# Gestor de materias
 
 Programa que desarrolle para mi uso personal para el seguimiento de las materias de mi carrera.
 El plan de estudio se ve planteado como un vector de registros.
@@ -27,5 +27,3 @@ Una materia esta representada por su numero, nombre/abreviación, materias que h
     ```bash
     python3 main.py
     ```
-
-Agrega cualquier otra información relevante sobre tu proyecto aquí.
