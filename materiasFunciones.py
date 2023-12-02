@@ -8,7 +8,15 @@ class Materia:
         self.aprobada = aprobada
 
     def ToString(self):
-        return f"{self.num} | {self.nombre}"
+        regEstado = "No Regular"
+        aproEstado = "No aprobada"
+
+        if self.regular == True:
+            regEstado = "Regular"
+        if self.aprobada == True:
+            aproEstado = "Aprobada"
+
+        return f"{self.num} | {self.nombre} | {regEstado} | {aproEstado}"
 
 t = True
 f = False
