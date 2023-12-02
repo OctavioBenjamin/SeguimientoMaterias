@@ -27,3 +27,5 @@ Una materia esta representada por su numero, nombre/abreviación, materias que h
     ```bash
     python3 main.py
     ```
+
+Una cosa a tener en cuenta es que por mas que se modifiquen las materias en el menu de opciones, no se van a ver reflejados los cambios ya que cuando se vuelve a cargar el script, las materias estan asignadas en el vector del archivo materiasFunciones.py
