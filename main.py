@@ -36,9 +36,14 @@ def menu_op1():
 
 def mostrar_materia(materias):
     num = int(input("Numero de materia: "))
+    encontrada = False
     for materia in materias:
         if num == materia.num:
+            encontrada = True 
             print(materia.ToString())
+
+    if not encontrada:
+        print(f"No se encontro ninguna materia con el numero {num}")
     limpiar_consola()
 
 def editar_materia(materias):
@@ -51,7 +56,7 @@ def editar_materia(materias):
             if opcion1 == 1:
                 materia.regular = not materia.regular
             else:
-                materia.aprobacion = not materia.aprobacion
+                materia.aprobada = not materia.aprobada
             print("")
             print("Resultado: ")
             print("")
@@ -59,6 +64,7 @@ def editar_materia(materias):
             print("")
     if not encontrada:
         print(f"No se encontro ninguna materia con el numero {numMateria}")
+    
     limpiar_consola()
 
 
